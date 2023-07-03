@@ -1,8 +1,16 @@
+import json
+import os
+from googleapiclient.discovery import build
+import isodate
+
 from src.channel import Channel
 
 if __name__ == '__main__':
     moscowpython = Channel('UC-OVMPlMA3-YCIeg4z5z23A')
     moscowpython.print_info()
+
+    # CHbu = Channel("UCeV6mvmLCcWULUN9kkH6-CA")
+    # CHbu.print_info()
 
     """
 {
