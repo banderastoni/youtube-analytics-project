@@ -26,39 +26,39 @@ class Channel:
         return f'{self.title} ({self.url})'
 
     def __add__(self, other):
-        """метод для операции сложения"""
+        """Метод для операции сложения"""
         return int(self.subscriber_count) + int(other.subscriber_count)
 
     def __sub__(self, other):
-        """метод для операции вычитания"""
+        """Метод для операции вычитания"""
         return int(self.subscriber_count) - int(other.subscriber_count)
 
     def __mul__(self, other):
-        """метод для операции умножения"""
+        """Метод для операции умножения"""
         return int(self.subscriber_count) * int(other.subscriber_count)
 
     def __truediv__(self, other):
-        """метод для операции деления"""
+        """Метод для операции деления"""
         return int(self.subscriber_count) / int(other.subscriber_count)
 
     def __lt__(self, other):
-        """метод для операции сравнения «меньше»"""
+        """Метод для операции сравнения «меньше»"""
         return int(self.subscriber_count) < int(other.subscriber_count)
 
     def __le__(self, other):
-        """метод для операции сравнения «меньше или равно»"""
+        """Метод для операции сравнения «меньше или равно»"""
         return int(self.subscriber_count) <= int(other.subscriber_count)
 
     def __gt__(self, other):
-        """метод для операции сравнения «больше»"""
+        """Метод для операции сравнения «больше»"""
         return int(self.subscriber_count) > int(other.subscriber_count)
 
     def __ge__(self, other):
-        """метод для операции сравнения «больше или равно»"""
+        """Метод для операции сравнения «больше или равно»"""
         return int(self.subscriber_count) >= int(other.subscriber_count)
 
     def __eq__(self, other):
-        """метод для операции сравнения «равно»"""
+        """Метод для операции сравнения «равно»"""
         return int(self.subscriber_count) == int(other.subscriber_count)
 
     def print_info(self) -> None:
